@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bake & Happy</title>
+    <!-- Menghubungkan ke file CSS yang sama -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- GSAP Library CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+   <!-- Header / Navbar -->
+<header class="navbar">
+    <a href="index.html" class="logo-link">
+        <img src="assets/images/banner-logo.png" alt="Bake & Happy Logo" class="navbar-logo-img">
+    </a>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="#penjelasan">Penjelasan</a>
+        <a href="#testimoni">Testimoni</a>
+    </nav>
+</header>
+
+<!-- Menu Page Section -->
+<section class="menu-page-section">
+    <div class="menu-container">
+        <h2>Menu</h2>
+        <p class="subtitle-menu">Pilihan pastry dan hidangan lezat yang dipanggang fresh setiap hari.</p>
+        
+        <!-- Tombol Filter Kategori -->
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">Semua</button>
+            <button class="tab-btn" data-category="sourdough">Sourdough (8)</button>
+            <button class="tab-btn" data-category="croissant">Croissant (5)</button>
+            <button class="tab-btn" data-category="roti">Roti (8)</button>
+            <button class="tab-btn" data-category="maindish">Main Dish (3)</button>
+            <button class="tab-btn" data-category="dessert">Dessert (4)</button>
+            <button class="tab-btn" data-category="detoxjuice">Detox Juice (1)</button>
+        </div>
+
+        <!-- ================= SECTION 1: SOURDOUGH (8 Varian) ================= -->
+        <div class="menu-category-section" data-section="sourdough">
+            <h3 class="category-heading"></h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/Sourdough loaf.png" alt="Classic Country Sourdough" class="product-img"></div>
+                    <h3>Sourdough Loaf</h3>
+                </div>
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/chocolate.png" alt="Seedy Whole Wheat" class="product-img"></div>
+                    <h3>Sourdough Chocolate</h3>
+                </div>
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/blueberry.png" alt="Rosemary Garlic Sourdough" class="product-img"></div>
+                    <h3>Sourdough Blueberry Cream Cheese</h3>    
+                </div>
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/garlic.png" alt="Jalapeno Cheddar Sourdough" class="product-img"></div>
+                    <h3>Sourdough Garlic Butter</h3>
+                </div>
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/pistacio.png" alt="Black Olive Sourdough" class="product-img"></div>
+                    <h3>Sourdough Pistacio</h3>
+                </div>
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/matchaa.png" alt="Cranberry Walnut Sourdough" class="product-img"></div>
+                    <h3>Sourdough Matcha</h3>
+                </div>
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/bery.png" alt="Multigrain Artisan Sourdough" class="product-img"></div>
+                    <h3>Sourdough Cranberry Cream Cheese</h3>
+                </div>
+                <div class="product-card" data-category="sourdough">
+                    <div class="product-img-container"><img src="assets/images/raisin.png" alt="Dark Rye Sourdough" class="product-img"></div>
+                    <h3>Sourdough Raisin Cream Cheese</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SECTION 2: CROISSANT (8 Varian) ================= -->
+        <div class="menu-category-section" data-section="croissant">
+            <h3 class="category-heading"></h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="croissant">
+                    <div class="product-img-container"><img src="assets/images/coco.png" alt="Pistachio Croissant" class="product-img"></div>
+                    <h3>Croissant Chocolate</h3>
+                </div>
+                <div class="product-card" data-category="croissant">
+                    <div class="product-img-container"><img src="assets/images/gaa.png" alt="Almond Danish" class="product-img"></div>
+                    <h3>Croissant Garlic Butter</h3>
+                </div>
+                <div class="product-card" data-category="croissant">
+                    <div class="product-img-container"><img src="assets/images/beef.png" alt="Butter Croissant" class="product-img"></div>
+                    <h3>Croissant smoked beef</h3>
+                </div>
+                <div class="product-card" data-category="croissant">
+                    <div class="product-img-container"><img src="assets/images/ciss.png" alt="Pain au Chocolat" class="product-img"></div>
+                    <h3>Croissant cheese</h3>
+                </div>
+                <div class="product-card" data-category="croissant">
+                    <div class="product-img-container"><img src="assets/images/matcha.png" alt="Salted Caramel Croissant" class="product-img"></div>
+                    <h3>Matcha Croissant</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SECTION 3: ROTI (8 Varian) ================= -->
+        <div class="menu-category-section" data-section="roti">
+            <h3 class="category-heading"></h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/cka.png" alt="Soft Milk Bread" class="product-img"></div>
+                    <h3>Roti Coklat</h3>
+                </div>
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/rc.png" alt="Japanese Shokupan" class="product-img"></div>
+                    <h3>Roti Keju</h3>
+                </div>
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/bl.png" alt="Garlic Cheese Bun" class="product-img"></div>
+                    <h3>Roti Blueberry</h3>
+                </div>
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/rs.png" alt="Sweet Chocolate Bun" class="product-img"></div>
+                    <h3>Roti Susu</h3>
+                </div>
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/st.png" alt="Cheese Roll" class="product-img"></div>
+                    <h3>Roti Strawberry</h3>
+                </div>
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/rk.png" alt="Cinnamon Roll" class="product-img"></div>
+                    <h3>Roti Kopi (Original)</h3>
+                </div>
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/rcka.png" alt="Roti Sobek Kelapa Pandan" class="product-img"></div>
+                    <h3>Roti Kopi (Coklat)</h3>
+                </div>
+                <div class="product-card" data-category="roti">
+                    <div class="product-img-container"><img src="assets/images/rkk.png" alt="Brioche Loaf" class="product-img"></div>
+                    <h3>Roti Kopi (Keju)</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SECTION 4: MAIN DISH (8 Varian) ================= -->
+        <div class="menu-category-section" data-section="maindish">
+            <h3 class="category-heading"></h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="maindish">
+                    <div class="product-img-container"><img src="assets/images/spg.png" alt="Spaghetti Brulee" class="product-img"></div>
+                    <h3>Spaghetti Brulee</h3>
+                </div>
+                <div class="product-card" data-category="maindish">
+                    <div class="product-img-container"><img src="assets/images/mc.png" alt="Macaroni Schotel" class="product-img"></div>
+                    <h3>Macaroni Schotel</h3>
+                </div>
+                <div class="product-card" data-category="maindish">
+                    <div class="product-img-container"><img src="assets/images/rosted.png" alt="Artisan Beef Burger" class="product-img"></div>
+                    <h3>Roasted Chicken</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SECTION 5: DESSERT (8 Varian) ================= -->
+        <div class="menu-category-section" data-section="dessert">
+            <h3 class="category-heading"></h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="dessert">
+                    <div class="product-img-container"><img src="assets/images/trsm.png" alt="Tiramisu Box" class="product-img"></div>
+                    <h3>Tiramisu</h3>
+                </div>
+                <div class="product-card" data-category="dessert">
+                    <div class="product-img-container"><img src="assets/images/ciscu.png" alt="Cheesecuit" class="product-img"></div>
+                    <h3>Cheesecuit</h3>
+                </div>
+                <div class="product-card" data-category="dessert">
+                    <div class="product-img-container"><img src="assets/images/bcc.png" alt="Matcha Ganache Tart" class="product-img"></div>
+                    <h3>Burnt Cheese Cake</h3>
+                </div>
+                <div class="product-card" data-category="dessert">
+                    <div class="product-img-container"><img src="assets/images/cookie.png" alt="Basque Burnt Cheesecake" class="product-img"></div>
+                    <h3>Cookie</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SECTION 6: DETOX JUICE ================= -->
+        <div class="menu-category-section" data-section="detoxjuice">
+            <h3 class="category-heading"></h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="detoxjuice">
+                    <div class="product-img-container">
+                        <img src="assets/images/detox.png" alt="Green Glow Detox" class="product-img" id="detoxImg">
+                    </div>
+                    <h3>Detox Juice</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Modal Lightbox untuk Zoom Gambar Detox -->
+<div id="imageModal" class="image-modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Detox Juice Zoom">
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Bake & Happy. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript untuk filter kategori & zoom detox.png -->
+<script>
+    // Filter Kategori Menu
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const categorySections = document.querySelectorAll('.menu-category-section');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const selectedCategory = button.getAttribute('data-category');
+
+            categorySections.forEach(section => {
+                const sectionName = section.getAttribute('data-section');
+                if (selectedCategory === 'all' || sectionName === selectedCategory) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Fitur Klik Gambar Detox (detox.png) agar Membesar (Lightbox Modal)
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    const closeBtn = document.querySelector('.modal-close');
+    const detoxImg = document.getElementById('detoxImg');
+
+    if (detoxImg) {
+        detoxImg.style.cursor = 'pointer';
+        detoxImg.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            modalImg.src = detoxImg.src;
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
+
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake & Happy - Artisan Pastry & Fresh Juice</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar dengan Efek Blur -->
+    <header class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="assets/images/banner-logo.png" alt="Bake & Happy Logo" class="navbar-logo-img">
+        </a>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="#penjelasan">Penjelasan</a>
+            <a href="#testimoni">Testimoni</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Freshly Baked, Baked with Love</h1>
+            <p>Nikmati kelezatan pastry renyah dan lembut serta fresh juice sehat setiap hari.</p>
+            
+            <!-- Tombol Navigasi & Sosial Media (WhatsApp & Instagram) di Bawah Teks -->
+            <div class="hero-actions">
+                <a href="menu.html" class="btn-primary">Jelajahi Menu</a>
+                <div class="hero-social-links">
+                    <a href="https://wa.me/6281382117100" target="_blank" class="social-btn whatsapp-btn">
+                        💬 WhatsApp Kami
+                    </a>
+                    <a href="https://www.instagram.com/bake.and.happy/" target="_blank" class="social-btn instagram-btn">
+                        📸 Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       SECTION PENJELASAN SOURDOUGH (BARU)
+       ========================================== -->
+    <section id="penjelasan" class="sourdough-explanation-section">
+        <div class="explanation-container">
+            <h2>Tentang Sourdough Artisan Kami</h2>
+            <p class="subtitle-explanation">Mengenal lebih dekat roti tradisional berkualitas tinggi</p>
+            
+            <div class="explanation-content">
+                <div class="explanation-card">
+                    <h3>Apa itu Sourdough?</h3>
+                    <p>Sourdough adalah roti yang dibuat menggunakan biang alami (starter) dari campuran tepung dan air yang difermentasi dengan ragi liar dan bakteri baik. Proses fermentasi yang berlangsung lebih lama menghasilkan cita rasa sedikit asam yang khas, aroma alami, serta tekstur lembut di dalam dan renyah di bagian luar.</p>
+                </div>
+                <div class="explanation-card">
+                    <h3>Berasal dari Fermentasi Alami</h3>
+                    <p>Kunci kelezatan dan kesehatan sourdough terletak pada <strong>sourdough starter</strong>yakni adonan fermentasi alami yang berisi campuran tepung dan air yang ditumbuhi oleh bakteri baik (Lactobacillus) dan ragi liar dari lingkungan sekitar. Proses fermentasi alami inilah yang memecah gluten secara alami, membuat roti jauh lebih mudah dicerna dan kaya nutrisi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+       INTERACTIVE 360° PRODUCT VIEWER SECTION (2 Botol Sejajar)
+       ========================================== -->
+    <section class="product-360-section">
+        <div class="viewer-container">
+            <h2>DETOX JUICE</h2>
+            <p class="viewer-subtitle">Segar setiap hari, Hidup lebih sehat !</p>
+            
+            <!-- Container Grid untuk 7 Botol Sejajar -->
+            <div class="bottles-grid">
+                <!-- Botol 1: Sweet and Sour -->
+                <div class="bottle-stage" id="bottleStage1">
+                    <img src="assets/images/Fruit Punch Juice Bottle.png" alt="Fruit Punch Juice" class="interactive-bottle" id="rotatableBottle1">
+                    <div class="drag-indicator"></div>
+                </div>
+
+                <!-- Botol 2: Fruit Punch -->
+                <div class="bottle-stage" id="bottleStage2">
+                    <img src="assets/images/Sweet Delight Fresh Juice Bottle.png" alt="Sweet Delight Fresh Juice Bottle" class="interactive-bottle" id="rotatableBottle2">
+                    <div class="drag-indicator"></div>
+                </div>
+
+                <!-- Botol 3: Morning Rush -->
+                <div class="bottle-stage" id="bottleStage3">
+                    <img src="assets/images/Tropical Fruit Detox Juice Bottle.png" alt="Tropical Fruit Detox Juice Bottle" class="interactive-bottle" id="rotatableBottle3">
+                    <div class="drag-indicator"></div>
+                </div>
+
+                <!-- Botol 4: Green Planet -->
+                <div class="bottle-stage" id="bottleStage4">
+                    <img src="assets/images/Emerald Green Juice Bottle.png" alt="Green Planet Juice" class="interactive-bottle" id="rotatableBottle4">
+                    <div class="drag-indicator"></div>
+                </div>
+
+                <!-- Botol 5: Tropical Fruit -->
+                <div class="bottle-stage" id="bottleStage5">
+                    <img src="assets/images/Sweet and Sour Orange Juice Bottle.png" alt="Sweet and Sour Orange Juice Bottle" class="interactive-bottle" id="rotatableBottle5">
+                    <div class="drag-indicator"></div>
+                </div>
+
+                <!-- Botol 6: Sweet Delight -->
+                <div class="bottle-stage" id="bottleStage6">
+                    <img src="assets/images/Morning Rush Citrus Juice.png" alt="Morning Rush" class="interactive-bottle" id="rotatableBottle6">
+                    <div class="drag-indicator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       SECTION GALERI / MOMEN TESTIMONI (Hanya Foto)
+       ========================================== -->
+    <section id="testimoni" class="testimonial-section">
+        <div class="testimonial-container">
+            <h2>Momen Bake & Happy</h2>
+            <p class="subtitle-testimonial">Kenangan manis dan kehangatan dari dapur kami</p>
+            
+            <div class="testimonial-photo-grid">
+                <!-- Foto Momen 1 -->
+                <div class="photo-card">
+                    <img src="assets/images/testimonial-1.jpg" alt="Momen Bake & Happy 1" class="gallery-photo">
+                </div>
+
+                <!-- Foto Momen 2 -->
+                <div class="photo-card">
+                    <img src="assets/images/testimonial-2.jpg" alt="Momen Bake & Happy 2" class="gallery-photo">
+                </div>
+
+                <!-- Foto Momen 3 -->
+                <div class="photo-card">
+                    <img src="assets/images/testimonial-3.jpg" alt="Momen Bake & Happy 3" class="gallery-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bake & Happy. All rights reserved.</p>
+    </footer>
+
+    <!-- Script JavaScript untuk Interaksi Putar Ketujuh Produk -->
+    <script>
+        function setupBottleRotation(stageId, bottleId) {
+            const stage = document.getElementById(stageId);
+            const bottle = document.getElementById(bottleId);
+            let isHovered = false;
+
+            if (!stage || !bottle) return;
+
+            stage.addEventListener('mouseenter', () => {
+                isHovered = true;
+                stage.style.cursor = 'ew-resize';
+            });
+
+            stage.addEventListener('mouseleave', () => {
+                isHovered = false;
+                stage.style.cursor = 'default';
+                bottle.style.transform = `rotateY(0deg) scale(1)`;
+            });
+
+            stage.addEventListener('mousemove', (e) => {
+                if (!isHovered) return;
+                const rect = stage.getBoundingClientRect();
+                const xPos = e.clientX - rect.left;
+                const width = rect.width;
+                const rotationAngle = ((xPos / width) - 0.5) * 120;
+                bottle.style.transform = `rotateY(${rotationAngle}deg) scale(1.08)`;
+            });
+        }
+
+        // Terapkan ke ketujuh botol
+        setupBottleRotation('bottleStage1', 'rotatableBottle1');
+        setupBottleRotation('bottleStage2', 'rotatableBottle2');
+        setupBottleRotation('bottleStage3', 'rotatableBottle3');
+        setupBottleRotation('bottleStage4', 'rotatableBottle4');
+        setupBottleRotation('bottleStage5', 'rotatableBottle5');
+        setupBottleRotation('bottleStage6', 'rotatableBottle6');
+    </script>
+</body>
+</html>
